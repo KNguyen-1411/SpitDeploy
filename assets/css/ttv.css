@@ -93,7 +93,7 @@ input[type="radio"]{
     outline: none;
     cursor: pointer;
 }
-span{
+.sex span, .tick span{
     margin: auto;
     margin-left: -10px;    
 }
@@ -134,7 +134,7 @@ textarea{
 .tick input{
     margin-right: 10px;
 }
-button{
+button[type="submit"]{
     color: #003056;
     border: none;
     width: 50px;
