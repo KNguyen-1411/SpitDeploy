@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SPIT</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        @media screen and (max-width: 768px) {
+            .video-gt {
+                width: 100% !important;
+            }
+        }
+        #scrollToTopBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  display: none; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: all .3s ease-in-out;
+}
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+  scale: 1.1;
+}
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top header">
+        <nav class="navbar navbar-expand-lg bg-body-bl  " style=" background-color: #003056 !important;">
+            <div class="container-fluid px-4">
+                <div class="navbar-brand">
+                    <a class="link-light link-underline-opacity-0 position-relative" href="#">
+                        <img width="45" src="/assets/img/logo.png" alt="">
+                        <span style="position: absolute; font-size: 30px; bottom: -12px; 
+                        font-weight: bold; left: 60px;">| SPIT</span>
+                    </a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link link-light fw-bold fs-5 " aria-current="page"
+                                    href="../index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light fw-bold fs-5 active" href="/">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link link-light fw-bold fs-5 " href="./action.html">Hoạt động</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link link-light fw-bold fs-5" href="./news.html"> Tin tức </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-light fw-bold fs-5 " href="./ttv.html">Tuyển thành viên</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-block d-lg-none">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon " style="filter: invert(1);"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" style="opacity: 0.8;"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link fw-bold"  href="../index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link fw-bold" href="./about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item " data-bs-dismiss="offcanvas">
+                        <a class="nav-link fw-bold" href="./action.html">Hoạt động</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link fw-bold"  href="./news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item" data-bs-dismiss="offcanvas">
+                        <a class="nav-link fw-bold" href="./ttv.html">Tuyển thành viên</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner position-relative mb-4">
+            <div class="banner-ovl position-absolute top-0 bottom-0 start-0 end-0 bg-light" style="opacity: 0.5;"></div>
+            <img src="../assets/img/banner-gt.png" alt="" class="w-100">
+            <div class="position-absolute start-0 end-0 bottom-50">
+                <h1 class="text-center fw-bold" style="font-size: 56px; color:  #003056;">GIỚI THIỆU</h1>
+            </div>
+        </div>
+        <div class="about-gt container pb-3">
+            <div class="row my-2">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Giới thiệu
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>(Support Programming Information Technology, viết tắt SPIT) Trường Đại học Khoa học Huế, được
+                        thành lập vào ngày dưới sự chỉ đạo của Hội Sinh viên trường và ban cố vấn thuộc Khoa Công nghệ
+                        thông tin Trường Đại học Khoa học, Đại học Huế.</p>
+                </div>
+                <div class="col-12">
+                    <p>CLB Hỗ trợ lập trình ra đời với mục đích tạo sân chơi học thuật, nghiên cứu, đam mê lập trình và
+                        có kinh nghiệm lập trình cho các bạn sinh viên trường Đai học Khoa học đặc biệt là sinh viên
+                        khoa Công nghệ thông tin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-vd container mb-5  ">
+            <div class="row mb-3 ">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Video giới thiệu
+                </h1>
+            </div>
+            <video controls class="w-75 d-block mx-auto video-gt">
+                <source src="../assets/videos/spit.mp4" type="video/mp4">
+            </video>
+            <p class="text-muted text-center mt-2">Video giới thiệu CLB Hỗ Trợ Lập Trình</p>
+        </div>
+        <div class="about-md container pb-4">
+            <div class="row mb-4">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Mục đích
+                </h1>
+            </div>
+            <div class="row">
+                <p>
+                    CLB Hỗ trợ lập trình ra đời với mục đích tạo sân chơi học thuật,
+                    nghiên cứu, đam mê lập trình và có kinh nghiệm lập trình cho các
+                    bạn sinh viên trường Đai học Khoa học đặc biệt là sinh viên khoa
+                    Công nghệ thông tin.
+                </p>
+                <p>
+                    Hỗ trợ hoạt động học tập của các bạn sinh viên, phát huy khả
+                    năng, góp phần nâng cao chất lượng học tập, tạo môi trường trao
+                    đổi, học tập, rèn luyện các kỹ năng ứng dụng trong ngành. CLB Hỗ
+                    trợ lập trình được ra đời trên cơ sở hỗ trợ các giảng viên trong
+                    các buổi học thực hành, giúp đỡ các bạn sinh viên trong việc
+                    tiếp cận và học tập các môn lập trình tại các buổi thực hành tại
+                    phòng máy.
+                </p>
+                <p>
+                    Trong tương lai, sẽ hướng đến việc hợp tác chặt chẽ với các
+                    doanh nghiệp là cầu nối giữa doanh nghiệp với khoa và với sinh
+                    viên
+                </p>
+            </div>
+        </div>
+        <div class="about-tt container">
+            <div class="row mb-4">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Thành tích nổi bật
+                </h1>
+            </div>
+            <div class="tt-img d-flex justify-content-between">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <img src="../assets/img/thanh tfch.jpg" class="rounded-3"
+                            style="width: 100%; height: 280px; object-fit: cover;" alt="">
+                            <p class="text-center text-muted mt-2">ICPC</p>
+                    </div>
+                    <div class="col-12 col-lg-4  mb-3">
+                        <img src="../assets/img/dg.jpg" class="rounded-3"
+                            style="width: 100%; height: 280px; object-fit: cover;" alt="">
+                            <p class="text-center text-muted mt-2">Code</p>
+
+                    </div>
+                    <div class="col-12 col-lg-4  mb-3">
+                        <img src="../assets/img/957.jpg" class="rounded-3"
+                            style="width: 100%; height: 280px; object-fit: cover;" alt="">
+                            <p class="text-center text-muted mt-2">Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-tc container py-4">
+            <div class="row">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Tổ chức
+                </h1>
+            </div>
+            <div class="row ">
+                <div class="col-md-5 shadow rounded-3 mx-auto mb-4 col-12 p-3 ">
+                    <h2 class="mb-3 text-center">Ban chủ nhiệm</h2>
+                    <p><span class="text-primary">Chủ nhiệm: </span>Võ Văn Thành, giảng viên khoa công nghệ thông tin.
+                    </p>
+                    <p><span class="text-primary">Phó chủ nhiệm: </span>Ngô Văn Hải, sinh viên CNTT K45F.</p>
+                    <p><span class="text-primary">Phó chủ nhiệm: </span>Lê Sỹ Toàn, sinh viên CNTT K45F.</p>
+                    <p><span class="text-primary">Phó chủ nhiệm: </span>Hoàng Bảo Khánh, sinh viên CNTT K46E.</p>
+                </div>
+                <div class="col-md-5 shadow rounded-3 mx-auto mb-4 col-12 p-3">
+                    <h2 class="mb-3 text-center">Cố vấn chuyên môn</h2>
+                    <p><span class="text-primary">TS: </span>Nguyễn Hoàng Hà, Trưởng khoa Công nghệ thông tin, Trưởng
+                        ban cố vấn.</p>
+                    <p><span class="text-primary">TS: </span>Nguyễn Đăng Bình, Giảng viên, Trưởng bộ môn Khoa học máy
+                        tính.</p>
+                    <p><span class="text-primary">ThS: </span>Lê Nguyễn Thuỷ Nhi, Giảng viên, bí thư liên chi đoàn Khoa
+                        Công nghệ Thôn tin.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-tv container">
+            <div class="row">
+                <h1>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                    </span>
+                    Thành viên
+                </h1>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                <h3 class="ms-4">Khoá 1:</h3>
+               </div>
+               <div class="col-12">
+                <h3 class="ms-4">Khoá 2:</h3>
+               </div>
+            </div>
+        </div>
+    </main>
+    <footer style=" background-color: #003056">
+        <!-- place footer here -->
+        <div class="container text-light">
+            <div class="row py-4 px-2">
+                <div class="col-12 col-xl-4 col-lg-5 col-md-6" style="margin-left: -12px;">
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fclbhtlt.ithusc&tabs&width=310&height=130&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=1564610671135833"
+                        width="310" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-3 col-md-6">
+                    <div class="row h6 mb-2">
+                        CLB hỗ trợ lập trình
+                    </div>
+                    <div class="row">
+                        77 Nguyễn Huệ, Huế
+                    </div>
+                    <div class="row">
+                        070 229 1317
+                    </div>
+                    <div class="row">
+                        clbhtlt.ithusc@gmail.com
+
+                    </div>
+                </div>
+                <div class="col-12 col-xl-2 col-lg-2 col-md-6">
+                    <div class="row h6 mb-2">
+                        Truy cập nhanh
+                    </div>
+                    <div class="row">
+                        <a href="../index.html" class="nav-link">Trang chủ</a>
+                    </div>
+                    <div class="row">
+                        <a href="./about.html" class="nav-link">Giới thiệu</a>
+                    </div>
+                    <div class="row">
+                        <a href="./action.html" class="nav-link">Hoạt động</a>
+                    </div>
+                    <div class="row">
+                        <a href="./news.html" class="nav-link">Tin tức</a>
+                    </div>
+                    <div class="row">
+                        <a href="./ttv.html" class="nav-link">Tuyển thành viên</a>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 col-lg-2 col-md-6">
+                    <div class="row h6 mb-2">
+                        Liên kết
+                    </div>
+                    <div class="row">
+                        <a href="http://husc.hueuni.edu.vn/index.php" style="margin-left: -12px; text-decoration: none;"
+                            class="link-light ">Trang chủ Trường Đại học Khoa học Huế</a>
+                    </div>
+                    <div class="row">
+                        <a href="https://it.husc.edu.vn/" style="margin-left: -12px; text-decoration: none;"
+                            class="link-light ">Khoa công nghệ thông tin</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+      </svg></button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('#scrollToTopBtn').fadeIn(); // Hiện nút
+            } else {
+                $('#scrollToTopBtn').fadeOut(); // Ẩn nút
+            }
+        });
+
+        $('#scrollToTopBtn').click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 800); // Cuộn mượt mà
+        });
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

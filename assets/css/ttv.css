@@ -1,0 +1,152 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    color: white;
+}
+.all{
+    position: relative;;
+    width:100%;
+    background : url(../img/an.jpg)  no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.hh {
+    color: #003056 !important;
+  }
+  .nav-link.active {
+    color: rgb(150, 150, 249) !important; 
+  }
+  .nav-link.active::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: rgb(150, 150, 249);
+  }
+.offcanvas-body li{
+    color: #003056;
+}
+footer *{
+    color: white;
+}
+input{
+    color: black;
+}
+.form{
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 5px 5px;
+    padding-bottom: 10px;
+}
+.form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background : url(../img/e95ae3a1-cc1c-421b-8f7a-e64720f10a28.jfif)  no-repeat center center fixed;
+    background-size: fill;
+    opacity: 80%;
+    z-index: -1;
+}
+.intro{
+    height: 200px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    text-align: center;
+}
+.content{
+    width: 94%;
+}
+.fl{
+    display: flex;
+    margin-top: 10px;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+}
+.fl label{
+    margin: auto 0;
+    width: 30%;
+    font-size: 20px;
+}
+.fl input{
+    width: 60%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.sex{
+    margin: 0;
+    display: flex;
+    width: 60%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type="radio"]{
+    margin: auto 0;  
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+span{
+    margin: auto;
+    margin-left: -10px;    
+}
+.section-2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.section-2 p{
+    font-size: 24px;
+    padding-bottom: 10px ;
+    text-align: center;
+}
+.point{
+    display: flex;
+    margin-top: 10px;
+}
+.point label{
+    width: 400px;
+}
+.point input{
+    width: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 30px;
+}
+.q{
+    margin-top: 10px;
+}
+.q label, .tick label{
+    display: block;
+}
+textarea{
+    height: 100px;
+    width: 100%;
+    font-size: 16px;
+    color: black;
+}
+.tick input{
+    margin-right: 10px;
+}
+button{
+    color: #003056;
+    border: none;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:576px) {
+    .fl label, label,.intro{
+        font-size: 16px;
+    }
+    input,span{
+        font-size: 15px;
+    }
+}
