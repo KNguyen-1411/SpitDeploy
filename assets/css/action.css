@@ -37,7 +37,7 @@ body{
     --boder-color:#aef3de;
 }
 .all {
-    background : url(../img/b3.jfif)  no-repeat center center fixed;
+    background : url('../img/b3.jfif')  no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     max-width: 1440px;
@@ -234,13 +234,13 @@ body{
     background-size: cover;
 }
 .ct-1{
-    background-image: url(../IMG/tuyenme.jpg);
+    background-image: url(../img/tuyenme.jpg);
 }
 .ct-2{
-    background-image: url(../IMG/form.jpg);
+    background-image: url(../img/form.jpg);
 }
 .ct-3{
-    background-image: url(../IMG/bien.jpg);
+    background-image: url(../img/bien.jpg);
 }
 @media (max-width:576px) {
     .ct-1, .ct-2, .ct-3, .ct-4, .ct-5{
