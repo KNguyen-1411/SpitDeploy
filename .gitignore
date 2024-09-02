@@ -2,4 +2,5 @@
 /Local/
 .env
 .env.local
-/.vscode/
+/.vscode
+.vscode/*
